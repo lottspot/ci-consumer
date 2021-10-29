@@ -1,3 +1,4 @@
 [holomapping]
 holosource = "ci-upstream=>ci-environment"
 files = "**"
+before = "*"

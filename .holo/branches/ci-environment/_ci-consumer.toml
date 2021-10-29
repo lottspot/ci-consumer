@@ -1,0 +1,4 @@
+[holomapping]
+root = "ci"
+files = "**"
+after = "*"
