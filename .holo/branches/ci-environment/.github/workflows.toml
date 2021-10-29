@@ -1,0 +1,4 @@
+[holomapping]
+holosource = "ci-upstream"
+root = "github-workflows"
+files = "**"
