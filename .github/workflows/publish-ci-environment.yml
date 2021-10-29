@@ -1,0 +1,21 @@
+name: Publish ci-environment
+
+on:
+  push:
+    branches: [ main ]
+
+env:
+  GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+  HAB_LICENSE: accept-no-persist
+
+
+jobs:
+  publish-ci-environment:
+    runs-on: ubuntu-latest
+    steps:
+
+    - name: 'Update holobranch: builds/ci-environment'
+      uses: JarvusInnovations/hologit@actions/projector/v1
+      with:
+        holobranch: ci-environment
+        commit-to: builds/ci-environment
